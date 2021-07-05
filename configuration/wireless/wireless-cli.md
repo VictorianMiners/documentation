@@ -97,6 +97,13 @@ network={
 
 You can verify whether it has successfully connected using `ifconfig wlan0`. If the `inet addr` field has an address beside it, the Raspberry Pi has connected to the network. If not, check your password and ESSID are correct.   
 
+If your Pi is still not able to find the hidden network, please type on command line:
+
+iwlist wlan0 scan essid "yourhiddenssid"
+
+and it should connect
+
+
 ## Adding multiple wireless network configurations
 
 On recent versions of Raspberry Pi OS, it is possible to set up multiple configurations for wireless networking. For example, you could set up one for home and one for school.
